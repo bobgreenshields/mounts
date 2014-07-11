@@ -1,9 +1,10 @@
 require "mounts/version"
-require_relative './mount_str_parser'
-require_relative './mount'
+require "mounts/mount_str_parser"
+require "mounts/mount"
+#require_relative './mount_str_parser'
+#require_relative './mount'
 
 module Mounts
-  # Your code goes here...
 
 	class Mounts
 
