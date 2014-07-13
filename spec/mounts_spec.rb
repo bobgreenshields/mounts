@@ -9,7 +9,8 @@ sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
 END
 	}}
 
-	let (:mnts) { Mounts::Mounts.new(mnt_str) }
+#	let (:mnts) { Mounts::Mounts.new(mnt_str) }
+	let (:mnts) { ActiveMounts.new(mnt_str) }
 
 	it "should have 3 mounts" do
 		expect(mnts.count).to eql(3)

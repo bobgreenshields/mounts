@@ -6,7 +6,7 @@ require "mounts/mount"
 
 module Mounts
 
-	class Mounts
+	class ActiveMounts
 
 		def initialize(mnts_provider = nil)
 			@mnts_provider = mnts_provider || -> { `mount` }
